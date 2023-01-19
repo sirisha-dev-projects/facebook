@@ -1,0 +1,16 @@
+<repositories>
+  <repository>
+    <id>gitlab-maven</id>
+    <url><your_endpoint_url></url>
+  </repository>
+</repositories>
+<distributionManagement>
+  <repository>
+    <id>gitlab-maven</id>
+    <url>https://gitlab.example.com/api/v4/projects/<project_id>/packages/maven</url>
+  </repository>
+  <snapshotRepository>
+    <id>gitlab-maven</id>
+    <url>https://gitlab.example.com/api/v4/projects/<project_id>/packages/maven</url>
+  </snapshotRepository>
+</distributionManagement>
